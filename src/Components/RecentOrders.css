@@ -1,0 +1,71 @@
+/* RecentOrders.css */
+
+.recent-orders {
+    background-color: #2a2a3e;
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    color: white;
+    max-height: 300px; /* Set max height */
+    overflow-y: auto; /* Add scrollbar if content exceeds height */
+}
+
+.recent-orders h2 {
+    margin-bottom: 10px;
+    font-size: 16px; /* Reduced font size */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px; /* Reduced padding */
+    text-align: left;
+    font-size: 14px; /* Reduced font size */
+}
+
+th {
+    background-color: #3a3a4e;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3a4e;
+}
+
+/* Status column styling */
+.status {
+    display: inline-block;
+    padding: 4px 8px; /* Padding for the status label */
+    border-radius: 12px; /* Curved edges */
+    font-size: 12px; /* Font size for the status */
+    text-transform: uppercase; /* Capitalize text */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* White text */
+    border: 1px solid; /* Default border style */
+}
+
+/* Green background for delivered */
+.delivered {
+    background: rgba(0, 128, 0, 0.2); /* Green with transparency */
+    border-color: rgba(0, 128, 0, 0.4); /* Light green border */
+}
+
+/* Red background for pending */
+.pending {
+    background: rgba(255, 0, 0, 0.2); /* Red with transparency */
+    border-color: rgba(255, 0, 0, 0.4); /* Light red border */
+}
+
+/* Customer profile image styling */
+.customer-info {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+}
+
+.profile-image {
+    width: 30px; /* Size of the profile image */
+    height: 30px; /* Size of the profile image */
+    border-radius: 50%; /* Make image circular */
+    margin-right: 10px; /* Space between image and name */
+}

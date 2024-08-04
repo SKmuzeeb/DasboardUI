@@ -1,0 +1,49 @@
+.customer-feedback {
+    background-color: #2a2a3e;
+    padding: 15px;  /* Reduc=ed padding */
+    border-radius: 8px;
+    color: white;
+    max-height: 300px;  /* Set max height */
+    overflow-y: auto;  /* Add scrollbar if content exceeds height */
+    margin-top : 0px;
+
+}
+
+.customer-feedback h2 {
+    margin-bottom: 10px;
+    font-size: 16px;  /* Reduced font size */
+}
+
+.feedback {
+    margin-bottom: 10px;
+}
+
+.feedback-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 30px;  /* Reduced size */
+    height: 30px;  /* Reduced size */
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 14px;  /* Reduced font size */
+    font-weight: bold;
+    flex: 1;
+}
+
+.rating {
+    color: #ffdf00;
+}
+
+.feedback-body {
+    background-color: #3a3a4e;
+    padding: 8px;  /* Reduced padding */
+    border-radius: 4px;
+    font-size: 14px;  /* Reduced font size */
+}

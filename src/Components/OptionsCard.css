@@ -1,0 +1,67 @@
+.overview-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: #fff;
+    position: relative;
+    width: 200px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove border */
+  }
+  
+  .card-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto; /* Push content to the left */
+  }
+  
+  .card-image {
+    width: 24px; /* Adjust image size */
+    height: 24px; /* Adjust image size */
+    margin-bottom: 4px;
+  }
+  
+  .card-title {
+    font-size: 8px; /* Adjust font size smaller than image */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card-count {
+    font-size: 18px; /* Keep count size as is */
+    margin: 4px 0;
+    
+  }
+  
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between arrow and percentage circle */
+    padding: 8px; /* Adjust padding to ensure it's at the bottom right */
+  }
+  
+  .circle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .percentage-circle {
+    width: 30px; /* Adjust size */
+    height: 30px; /* Adjust size */
+  }
+  
+  .card-arrow {
+    width: 16px; /* Adjust size */
+    height: 16px; /* Adjust size */
+  }
+  
+  .card-percentage {
+    font-size: 12px; /* Adjust font size */
+  }
+  

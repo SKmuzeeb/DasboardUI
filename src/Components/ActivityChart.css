@@ -1,0 +1,35 @@
+.activity-chart {
+    background-color: #2a2a3e;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    height: 300px; /* Adjust height for the chart */
+    overflow: hidden; /* Remove scrollbar within the chart container */
+    box-sizing: border-box; /* Include padding in width and height */
+    position: relative; /* Relative positioning to control inner elements */
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px; /* Space between header and chart */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.filter-container {
+    background-color: #2a2a3e; /* Match background color to ensure it blends in */
+    padding: 5px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners for the dropdown */
+}
+
+.chart-container {
+    width: 100%; /* Make sure the container takes the full width */
+    height: 100%; /* Ensure full height */
+    display: flex; /* Use flexbox for proper alignment */
+    align-items: center; /* Center the chart vertically */
+    justify-content: center; /* Center the chart horizontally */
+    position: absolute; /* Absolute positioning to cover the container */
+    top: 0;
+    left: 0;
+}
