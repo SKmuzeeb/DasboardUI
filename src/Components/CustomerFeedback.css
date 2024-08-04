@@ -1,12 +1,31 @@
 .customer-feedback {
     background-color: #2a2a3e;
-    padding: 15px;  /* Reduc=ed padding */
+    padding: 15px;  /* Reduced padding */
     border-radius: 8px;
     color: white;
     max-height: 300px;  /* Set max height */
     overflow-y: auto;  /* Add scrollbar if content exceeds height */
-    margin-top : 0px;
+    margin-top: 0px;
+}
 
+/* Custom scrollbar styles for WebKit browsers */
+.customer-feedback::-webkit-scrollbar {
+    width: 8px;  /* Thin scrollbar width */
+}
+
+.customer-feedback::-webkit-scrollbar-track {
+    background: #2a2a3e;  /* Track background color */
+}
+
+.customer-feedback::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+/* For Firefox */
+.customer-feedback {
+    scrollbar-width: thin;  /* Thin scrollbar */
+    scrollbar-color: #555 #2a2a3e;  /* Thumb color and track color */
 }
 
 .customer-feedback h2 {
