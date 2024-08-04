@@ -1,12 +1,28 @@
-/* RecentOrders.css */
-
 .recent-orders {
     background-color: #2a2a3e;
-    padding: 15px; /* Reduced padding */
+    padding: 15px;
     border-radius: 8px;
     color: white;
     max-height: 300px; /* Set max height */
     overflow-y: auto; /* Add scrollbar if content exceeds height */
+
+    /* WebKit scrollbar styles */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* Firefox */
+}
+
+/* WebKit browsers */
+.recent-orders::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+
+.recent-orders::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.recent-orders::-webkit-scrollbar-track {
+    background: transparent; /* Background of the track */
 }
 
 .recent-orders h2 {

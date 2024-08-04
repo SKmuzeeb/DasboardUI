@@ -12,11 +12,12 @@
 .search-bar {
     width: 200px;  /* Reduced width */
     padding: 5px;  /* Reduced padding */
-    border: none;
+    border: 1px solid #ffffff;  /* White border for outline */
     border-radius: 4px;
     background-color: #2a2a3e;
     color: white;
 }
+
 
 .user-info {
     display: flex;

@@ -52,33 +52,36 @@ const RecentOrders = () => {
     return (
         <div className="recent-orders">
             <h2>Recent Orders</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Customer</th>
-                        <th>Order No.</th>
-                        <th>Amount</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {orders.map((order, index) => (
-                        <tr key={index}>
-                            <td>
-                                <div className="customer-info">
-                                    <img src={order.image} alt={order.customer} className="profile-image" />
-                                    {order.customer}
-                                </div>
-                            </td>
-                            <td>{order.orderNo}</td>
-                            <td>{order.amount}</td>
-                            <td><span className={`status ${order.status.toLowerCase()}`}>{order.status}</span></td>
+            <div className="recent-orders-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Order No.</th>
+                            <th>Amount</th>
+                            <th>Status</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        {orders.map((order, index) => (
+                            <tr key={index}>
+                                <td>
+                                    <div className="customer-info">
+                                        <img src={order.image} alt={order.customer} className="profile-image" />
+                                        {order.customer}
+                                    </div>
+                                </td>
+                                <td>{order.orderNo}</td>
+                                <td>{order.amount}</td>
+                                <td><span className={`status ${order.status.toLowerCase()}`}>{order.status}</span></td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
+
 };
 
 export default RecentOrders;
